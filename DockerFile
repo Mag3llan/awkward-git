@@ -1,0 +1,6 @@
+FROM runnable/node
+MAINTAINER devops@mag3llan.com
+
+RUN rm -rf /root/*
+ADD . /root
+RUN cd /root && npm install
